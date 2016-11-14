@@ -1,0 +1,20 @@
+{
+  "name": "zBlog",
+  "description": "",
+  "main": "",
+  "authors": [
+    "WakeUpPig <1035465284qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
