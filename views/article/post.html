@@ -1,3 +1,15 @@
 <%- include ../include/header.html%>
-发表
+<form action="/article/post" method="post">
+
+    <input type="hidden" value="<%article._id%>" name="_id">
+    <div class="form-group">
+        <label for="title" class="control-label">标题</label>
+        <input value="<%=article.title%>" type="text" class="form-control" name="title" id="title">
+    </div>
+    <div class="form-group">
+        <label for="content" class="control-label">内容</label>
+        <textarea  class="form-control" name="content" id="content"><%=article.content%></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">发表</button>
+</form>
 <%- include ../include/footer.html%>

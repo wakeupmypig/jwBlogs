@@ -41,6 +41,7 @@ app.use(function (req,res,next) {
   res.locals.success = req.flash('success').toString();
   res.locals.error = req.flash('error').toString();
   res.locals.user = req.session.user;
+  res.locals.keywords = '';
   next();
 });
 app.use(express.static(path.join(__dirname, 'public')));
